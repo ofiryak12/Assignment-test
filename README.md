@@ -1,7 +1,5 @@
 # Assignment-test
 
-Hey!
-My name is ofir and i will be presenting this task to you.
 
 Task Requirments:
 -------------------------
@@ -19,12 +17,13 @@ User authantication. User could only view the messages that are directed to him.
 
 Overview
 --------------------------
-Database: I used the python built-in database, sqlite3.
-Authantication: I used token based authantication.
-
 Using Class based views, i constructed the appropriate response for each task.
 Only authorized users could perform any of the actions - besides reaching the home page.
 Once authorized, using request.user i filtered all objects so that only the users messages would be shown to him.
+
+Database: I used the python built-in database, sqlite3.
+Authantication: I used token based authantication.
+
 
 Object Class Views
 -------------------------
@@ -39,11 +38,17 @@ APP
 One app was made - Messages
 
 The models.py file in the app was constructed as such:
+
     sender          = models.CharField(max_length=100)
+    
     reciever        = models.CharField(max_length=100)
+    
     message         = models.TextField()
+    
     subject         = models.CharField(max_length=50)
+    
     read            = models.BooleanField(default=False)
+    
     creation_Date   = models.DateTimeField(auto_now_add=True)
 
 Sender\Reciever for who sended the message and who recieved it.
