@@ -62,7 +62,9 @@ Creation date is for mentioning the sent time of the message.
 URLS
 ------------------------
 /user/ - View all messages for the logged in user, and post a message.
+
 /read/pk - Read a specific message which will change 'read' to True. Delete for deleting a specific message.
+
 /unread/ - View all unread messages(messages the have the 'read' boolean as False)
 
 Heroku
