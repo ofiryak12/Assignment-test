@@ -23,7 +23,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 SECRET_KEY = 'django-insecure-#6mj6mi#wts%p8&-mnq3$#ld=e8glzq1%l7e5mlkrz*ui1q*ok'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1','assignment-test-herolo.herokuapp.com/']
 
