@@ -25,7 +25,7 @@ Database: I used the python built-in database, sqlite3.
 Authantication: I used token based authantication.
 
 
-Object Class Views
+Class Based Views
 -------------------------
 4 Object were made.
 - Read_Msgs, for reading all messages and posting.
@@ -72,11 +72,19 @@ Heroku
 I deployed to heroku, though the authantication seemed to cause a problem.
 The project will only work if deployed locally.
 
+The error I recieved is "relation "authtoken_token" does not exist". This must be a configuration issue with the file heroku has, and the packages i installed locally. 
+
+The superuser I created, must be not configured with heroku, so resolving this issue is a matter of syncing the superusers.
+
+Users
+---------------------
+super users:
+username:ofir password:sinofsins12
+username:omri password:sinofsins12
+
 Summary
 ----------------------
-I was unable to deploy to heroku while using the token authantication, it seems like a configuration problem,
-the tokenauth seemed to not be configured with the python files heroku uploaded,
-so to solve this problem I would check how it is able to configure this files.
+The server can handle user messages, reading, posting, deleting. Plus, the authantication provides an assurance that only the user can access his messages - keeping his privacy. However, the Issue with heroku still stands, but i am sure it is an easy fix if i had more time to handle it.
 
 
 
