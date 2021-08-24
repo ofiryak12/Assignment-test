@@ -6,6 +6,18 @@ from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.authentication import TokenAuthentication
 from rest_framework import status
+from django.http import HttpResponse
+
+# def home_page(*args,**kwargs):
+#     return HttpResponse("<h1>Ofirs Backend server ! Welcome !</h1>")
+
+class home_view(APIView):
+
+
+
+    def get(self,request):
+
+        return HttpResponse("<h1>Ofirs Backend server ! Welcome !</h1>")
 
 class Read_Msgs(APIView):
 
