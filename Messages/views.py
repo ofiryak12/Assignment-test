@@ -8,8 +8,15 @@ from rest_framework.authentication import TokenAuthentication
 from rest_framework import status
 from django.http import HttpResponse
 
-# def home_page(*args,**kwargs):
-#     return HttpResponse("<h1>Ofirs Backend server ! Welcome !</h1>")
+# I made 4 objects for this views.py
+
+# home_view for my homepages
+
+#read_msgs for reading all messages and posting
+
+# read_unread_msgs for reading all unread messages
+
+# single_message_view for reading a specific message or deleting a specific message
 
 class home_view(APIView):
 
