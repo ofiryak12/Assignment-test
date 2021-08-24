@@ -79,8 +79,11 @@ The superuser I created, must be not configured with heroku, so resolving this i
 Users
 ---------------------
 super users:
+
 username:ofir password:sinofsins12
+
 username:omri password:sinofsins12
+
 
 Summary
 ----------------------
