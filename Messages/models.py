@@ -8,6 +8,13 @@
 #     featured = models.BooleanField(null=True)
 
 from django.db import models
+from django.conf import settings
+
+class Token(models.Model):
+    ...
+
+    class Meta:
+        abstract = 'rest_framework.authtoken' not in settings.INSTALLED_APPS
 
 class Data_msg(models.Model):
     sender          = models.CharField(max_length=100)
