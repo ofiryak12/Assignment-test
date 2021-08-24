@@ -74,7 +74,7 @@ The project will only work if deployed locally.
 
 Summary
 ----------------------
-However, I was unable to deploy to heroku while using the token authantication, it seems like a configuration problem,
+I was unable to deploy to heroku while using the token authantication, it seems like a configuration problem,
 the tokenauth seemed to not be configured with the python files heroku uploaded,
 so to solve this problem I would check how it is able to configure this files.
 
