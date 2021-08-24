@@ -47,8 +47,11 @@ The models.py file in the app was constructed as such:
     creation_Date   = models.DateTimeField(auto_now_add=True)
 
 Sender\Reciever for who sended the message and who recieved it.
+
 Message is the body, and subject the title. 
+
 Read is a boolean made for filtering read from unread messages.
+
 Creation date is for mentioning the sent time of the message.
 
 URLS
@@ -64,13 +67,10 @@ The project will only work if deployed locally.
 
 Summary
 ----------------------
-The project is a success. All requirments were met.
-However, i was unable to deploy to heroku while using the token authantication, it seems like a configuration problem,
+However, I was unable to deploy to heroku while using the token authantication, it seems like a configuration problem,
 the tokenauth seemed to not be configured with the python files heroku uploaded,
-so to solve this problem i would check how it is able to configure this files.
+so to solve this problem I would check how it is able to configure this files.
 
-Thank you for reading!
-Best regards,
-Ofir.
+
 
  
